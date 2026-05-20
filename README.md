@@ -13,20 +13,5 @@ This application represents an E-type system according to Lehman's Laws of Softw
 - Delete student records.
 - Exception handling for invalid inputs.
 
-## Prerequisites
-- Python 3.x
-- No external libraries are required (Tkinter and SQLite3 are built-in).
 
-## How to Run
-1. Clone or download the repository.
-2. Open a terminal and navigate to the `StudentGradeCalculator` directory.
-3. Run the application using the following command:
-   ```bash
-   python main.py
-   ```
 
-## How to Run Tests
-To automatically run all unit tests, execute:
-```bash
-python run_tests.py
-```
