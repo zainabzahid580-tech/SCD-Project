@@ -1,0 +1,16 @@
+Code Review Notes:
+
+1. Comment: "Missing input validation for student names."
+   Fix: Added a check in controllers.py to ensure the name field is not empty before creating a student.
+
+2. Comment: "Missing input validation for marks."
+   Fix: Added try/except block for ValueError to catch letters entered in the marks field. Added bounds checking (0-100) in the Student model.
+
+3. Comment: "Database connection not closed."
+   Fix: Added conn.close() in db.py and models.py after executing queries to prevent resource leaks.
+
+4. Comment: "Function too long in the legacy main file."
+   Fix: Refactored the single monolithic file into MVC architecture (models.py, views.py, controllers.py, db.py) to keep classes focused and manageable.
+
+5. Comment: "No automated tests for grading logic."
+   Fix: Created tests/test_models.py with 5 unit tests covering addition, deletion, invalid marks, retrieval, and grade calculation.
